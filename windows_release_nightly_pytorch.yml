@@ -10,7 +10,6 @@ jobs:
     permissions:
         contents: "write"
         packages: "write"
-        pull-requests: "read"
     runs-on: windows-latest
     steps:
         - uses: actions/checkout@v3
@@ -41,7 +40,6 @@ jobs:
 
 
             mkdir update
-            cp -r ComfyUI/.ci/update_windows/* ./update/
             cp -r ComfyUI/.ci/windows_base_files/* ./
 
             cd ..
